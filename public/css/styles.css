@@ -1,0 +1,1374 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*GENERAL*/
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+.hybrid {
+    width: 90%;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+}
+
+.error {
+    color: red;
+    padding-top: 1%;
+}
+
+.right {
+    margin-right: 0px;
+}
+
+.row {
+    display: flex;
+}
+
+.m0a {
+    margin: 0 auto;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w33 {
+    width: 33%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+.sw {
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*NAVBAR*/
+nav {
+    background-color: #99bcbc;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: white;
+}
+
+nav img {
+    height: 7vh;
+}
+
+.navbar-header {
+    display: none;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.toggle-icon {
+    color: white;
+    font-size: 40px;
+}
+
+.navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+
+/*HEADER*/
+header {
+    background-color: #99bcbc;
+    width: 100%;
+}
+
+header div {
+    align-items: center;
+}
+
+header img {
+    width: 6vh;
+}
+
+header nav ul li:last-child a {
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: white 2px solid;
+    background-color: rgba(255, 255, 255, 0.103);
+}
+
+/*MAIN*/
+#start {
+    padding: 10px 40px;
+    border: black 2px solid;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 16px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    font-family: "Poppins";
+    overflow: hidden;
+}
+
+#title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#title h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+#imgHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+#imgHome img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*LIST SPACES*/
+#spaces h1 {
+    text-align: center;
+}
+
+#spaces,
+#editSpace,
+#newSpace {
+    padding-bottom: 15%;
+}
+
+.slideSpace {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65%;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    min-height: 140px;
+}
+
+.slideSpace img {
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    min-height: 70px;
+    min-width: 70px;
+}
+
+.infoSpace {
+    background-color: #99bcbc70;
+    border-top: 0;
+    padding: 2% 2% 1% 2%;
+    height: 35%;
+    overflow: hidden;
+    border-radius: 0 0 10px 10px;
+}
+
+.infoSpace h2 {
+    margin: 0;
+    font-size: 100%;
+}
+
+.infoSpace p {
+    font-size: 100%;
+    margin-top: 0;
+}
+
+.infoSpace p:last-child {
+    text-align: right;
+    color: rgb(105, 105, 105);
+    margin-bottom: auto;
+}
+
+#spaces .inner {
+    padding: 15px 10px;
+    height: 30vh;
+    min-height: 200px;
+}
+
+#spaces .row {
+    flex-wrap: wrap;
+}
+
+/*SPACE*/
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+
+.image-row img,
+.taskDescription img {
+    border-radius: 25px;
+    position: relative;
+    margin-left: -20px;
+    width: 5vh;
+}
+
+.banner {
+    background-color: #c4c4c4;
+    height: 6vh;
+    padding-right: 10vh;
+    padding: 0 10vh;
+    min-width: 350px;
+}
+
+.banner h1 {
+    font-size: 100%;
+    width: 100%;
+    margin: auto 0;
+
+}
+
+.banner img {
+    height: 4vh;
+}
+
+.banner div {
+    align-items: center;
+    width: 30vh;
+    justify-content: end;
+    padding: 1vh;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    font-size: 22px;
+    border: none;
+}
+
+tr {
+    border: #99bcbc 1px solid;
+    border-radius: 25px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: left;
+}
+
+#tasks td:nth-child(6),
+td:nth-child(7) {
+    width: 5vh;
+}
+
+#tasks select {
+    background-color: transparent;
+    border: none;
+    font-size: 100%;
+}
+
+.taskDescription {
+    display: none;
+}
+
+.taskDescription td {
+    text-align: left;
+}
+
+.taskDescription td:nth-child(3) {
+    text-align: left;
+}
+
+table td:first-child {
+    width: 6vh;
+}
+
+table img {
+    min-width: 3vh;
+    max-width: 100%;
+}
+
+#editSpace table tr td:last-child,
+#editSpace table tr td:nth-child(3),
+#newSpace table tr td:last-child,
+#newSpace table tr td:nth-child(3) {
+    max-width: 4vh;
+}
+
+#menuFilters {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 86%;
+    width: 13%;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding-left: 1%;
+}
+
+#menuFilters h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#menuFilters label {
+    display: inline-block;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 25px;
+    border: solid 1px #99bcbc;
+    color: #99bcbc;
+}
+
+#menuFilters button[type="submit"] {
+    width: auto;
+    padding: 5%;
+    margin-top: 5%;
+    background-color: #99bcbc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/*LOGIN*/
+
+#login {
+    height: 100vh;
+    width: 100vh;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+#login article {
+    text-align: center;
+}
+
+#login article a,
+#register article a {
+    justify-content: center;
+    display: flex;
+}
+
+#login article a img,
+#register article a img {
+    width: 20%;
+}
+
+#login aside img {
+    width: 70%;
+}
+
+#login article * {
+    display: block;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+    border-radius: 20px;
+    border: #99bcbc 1px solid;
+    background-color: transparent;
+    padding: 10px;
+    margin: 1%;
+    width: 40vh;
+}
+
+#login button {
+    width: 100%;
+    background-color: #99bcbc;
+    color: white;
+    border-radius: 25px;
+    padding: 5%;
+    border: none;
+    font-size: 16px;
+}
+
+#login div#remember * {
+    display: inline;
+}
+
+#login div {
+    margin-top: 10%;
+}
+
+#login form div a {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*EDIT SPACE*/
+
+#editSpace h1 {
+    text-align: center;
+}
+
+input#addMembers {
+    width: 80%;
+    border: #99bcbc 1px solid;
+    padding: 2%;
+    margin: 2% 0;
+}
+
+.members input[type="button"] {
+    width: 15%;
+    background-color: #99bcbc;
+    border: none;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+#newTask .members,
+#editTask .members {
+    flex-wrap: wrap;
+}
+
+#newTask .members div,
+#editTask .members div {
+    width: 50%;
+}
+
+#newTask .members input,
+#editTask .members input {
+    width: auto;
+}
+
+.members {
+    padding: 5%;
+    flex-direction: column;
+}
+
+.members select {
+    background-color: #fff;
+    border: #969696 1px solid;
+    color: #444444;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5px;
+    width: 90%;
+}
+
+#editSpace table,
+#newSpace table {
+    border-collapse: unset;
+}
+
+table .type {
+    text-align: left;
+}
+
+#editSpace .slideSpace img {
+    width: 20vh;
+    height: 20vh;
+}
+
+#editSpace table tr td:first-child img,
+#newSpace table tr td:first-child img {
+    width: 4vh;
+}
+
+#editSpace table th,
+#editSpace table td,
+#newSpace table th,
+#newSpace table td {
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+    max-width: 80vh;
+    font-size: auto;
+}
+
+#editSpace button {
+    background-color: #fff;
+    border: #99bcbc 1px solid;
+    border-radius: 25px;
+}
+
+#editSpace article {
+    width: 70%;
+    height: 60vh;
+}
+
+#editSpace .infoSpace {
+    flex-direction: column;
+}
+
+.members input {
+    width: 60%;
+    border: solid #99bcbc 1px;
+    padding: 2%;
+}
+
+.members button#addMemberBtn {
+    width: 20%;
+    background-color: #99bcbc;
+    border-radius: 10px;
+    padding: 2%;
+    margin-left: 2%;
+    color: white;
+    border: none;
+}
+
+#btnEditSpace,
+#btnDeleteSpace {
+    width: 90%;
+    padding: 20%;
+    border: solid #99bcbc 1px;
+    border-radius: 50px;
+}
+
+#editSpace .inner .infoSpace {
+    min-height: 160px;
+}
+
+#editSpace .infoSpace input {
+    font-size: 22px;
+}
+
+#editSpace .infoSpace input,
+#editSpace .infoSpace textarea {
+    border: none;
+    border-left: white 3px solid;
+    margin: 2%;
+    background-color: #99bcbc00;
+    padding-left: 1%;
+}
+
+#editSpace .infoSpace textarea {
+    font-size: 16px;
+}
+
+.imgSpace {
+    width: 20vh;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+#buttonContainer {
+    text-align: right;
+    margin-top: 20vh;
+}
+
+#buttonContainer button {
+    background-color: #99bcbc;
+    color: white;
+    border-radius: 5px;
+    width: 15vh;
+    padding: 1%;
+}
+
+#buttonContainer a {
+    border-radius: 5px;
+    color: #99bcbc;
+    border: #99bcbc 1px solid;
+    padding: 1%;
+}
+
+/*Edit Profile*/
+#alertDelete {
+    display: none;
+}
+
+/*New Task*/
+.fw {
+    flex-wrap: wrap;
+}
+
+.taskBasic {
+    width: 70%;
+}
+
+.taskType {
+    height: 5vh;
+    margin-top: 2%;
+}
+
+#newTask div div,
+#editTask div div {
+    flex-direction: column;
+    text-align: start;
+}
+
+#newTask,
+#editTask {
+    text-align: center;
+}
+
+#newTask select,
+#editTask select {
+    background-color: white;
+    border: #969696 1px solid;
+    width: 80%;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#newTask input,
+#newTask textarea,
+#editTask input,
+#editTask textarea {
+    border: #99bcbc 1px solid;
+    margin-top: 2%;
+    margin-right: 5%;
+    padding: 2%;
+    width: 90%;
+}
+
+#newTask textarea,
+#editTask textarea {
+    height: 15vh;
+    margin-bottom: 5%;
+}
+
+#newTask form,
+#editTask form {
+    justify-content: center;
+}
+
+#newTask form div,
+#editTask form div {
+    padding-top: 5%;
+    align-items: center;
+}
+
+#newTask form label,
+#editTask form label {
+    padding-right: 2%;
+}
+
+#newTask form div div,
+#editTask form div div {
+    flex-direction: row;
+}
+
+#newTask form #assignMember,
+#editTask form #assignMember {
+    width: 15%;
+    border: none;
+    border-radius: 10px;
+    background-color: #99bcbc;
+    color: white;
+}
+
+#newTask button,
+#editTask button {
+    border-radius: 10px;
+    background-color: #99bcbc;
+    color: white;
+    border: none;
+    padding: 1% 3%;
+    margin-top: 5%;
+}
+
+.taskList {
+    width: 70%;
+}
+
+.buttons * {
+    border: none;
+    padding: 1vh;
+    border-radius: 5px;
+}
+
+.buttons a {
+    background-color: #99bcbc;
+    color: white;
+}
+
+.buttons button {
+    background-color: #e6ecf0;
+    color: #444444;
+}
+
+#spaceMenu {
+    padding: 1vh;
+    min-width: 350px;
+}
+
+#spaceMenu input {
+    border-radius: 5px;
+    border: rgb(187, 187, 187) 1px solid;
+    padding-left: 2%;
+    background-image: url("{{ asset('images/search.png') }}");
+    background-size: 20px;
+    background-position: 5px center;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+/*NEW SPACE*/
+#newSpace h1 {
+    text-align: center;
+}
+
+#newSpace .buttons button {
+    background-color: #99bcbc;
+    color: white;
+}
+
+#newSpace .buttons a {
+    background-color: #ffffff00;
+    color: #99bcbc;
+}
+
+#newSpace form div {
+    flex-direction: column;
+}
+
+#newSpace form label {
+    padding-bottom: 2%;
+}
+
+#newSpace .members {
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+}
+
+#newSpace .members .members {
+    width: 40%;
+}
+
+#newSpace .divName {
+    justify-content: center;
+}
+
+#newSpace .buttons {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#newSpace form div input {
+    width: 50%;
+    border: 1px #99bcbc solid;
+    padding: 2%;
+}
+
+#newSpace form div textarea {
+    width: 70%;
+    border: 1px #99bcbc solid;
+    height: 50%;
+}
+
+#newSpace .members div.row {
+    flex-direction: row;
+}
+
+.photo-container,
+.wallpaper-container {
+    width: 70%;
+    height: 20vh;
+    border: 2px dashed #99bcbc;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2% 0;
+    padding: 2%;
+    min-height: 160px;
+}
+
+.photo,
+.wallpaper {
+    width: auto;
+    height: 20vh;
+}
+
+.fileUploadPhoto,
+.fileUploadWallpaper {
+    width: 10%;
+    padding: 10px;
+}
+
+#newSpace input#photo,
+#newSpace input#wallpaper {
+    border: none;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: #99bcbc;
+    padding: 0.5em;
+    border: thin solid #99bcbc;
+    border-radius: 3px;
+    background: #fbfdfe;
+}
+
+/*EDIT PROFILE*/
+#editProfile input {
+    border: none;
+    border-bottom: 1px #99bcbc solid;
+    padding: 1%;
+    margin: 2% 0;
+    width: 70%;
+    background-color: transparent;
+}
+
+#editProfile div.w50 div {
+    flex-direction: column;
+}
+
+#editProfile h2 {
+    text-align: center;
+}
+
+#editProfile button {
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#editProfile div button {
+    margin-bottom: 2%;
+    border: none;
+    background-color: #99bcbc;
+    color: white;
+}
+
+#deleteAccount {
+    background-color: transparent;
+    color: rgb(207, 19, 19);
+    border: rgb(207, 19, 19) 1px solid;
+    margin-left: 67%;
+    padding: 1vh;
+}
+
+#editProfile img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#editProfile div.m0a {
+    align-items: center;
+}
+
+#alertDelete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 4% 3%;
+    border-radius: 5px;
+    max-width: 35%;
+    text-align: center;
+}
+
+#alertDelete button {
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+#deleteAcountDefinitive {
+    background-color: red;
+    color: white;
+}
+
+input[type="password"] {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+/*REGISTER*/
+#register {
+    height: 100%;
+    width: 100vh;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+#register h1,
+#login h1 {
+    font-size: 60px;
+    color: #99bcbc;
+    font-weight: 300;
+    letter-spacing: 2vh;
+}
+
+#register article,
+#login article {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register article * {
+    display: block;
+}
+
+#register aside,
+#login aside {
+    background-color: #99bcbc;
+    width: 35%;
+    height: 100vh;
+    margin-right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#register aside img {
+    width: 50%;
+}
+
+#register form {
+    width: 50%;
+}
+
+#register input {
+    border: none;
+    border-bottom: #99bcbc 1px solid;
+    background-color: transparent;
+    padding: 10px;
+    margin: 1%;
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 16px;
+}
+
+
+#register form div {
+    text-align: start;
+}
+
+#register button {
+    width: 100%;
+    background-color: #99bcbc;
+    color: white;
+    border-radius: 20px;
+    padding: 3%;
+    border: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 4%;
+}
+
+#register a {
+    color: #000;
+}
+
+/*PAGINATION*/
+ul.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: 7%;
+}
+
+ul.pagination li {
+    margin-right: 0.5%;
+}
+
+ul.pagination li a,
+ul.pagination li span {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 5px;
+}
+
+ul.pagination li.active span {
+    background-color: #99bcbc;
+    color: #fff;
+}
+
+ul.pagination li.disabled a:hover {
+    background-color: transparent;
+}
+
+/* BREADCRUMBS */
+ul.uk-breadcrumb {
+    color: #99bcbc;
+    list-style-type: ">";
+    display: flex;
+}
+
+ul.uk-breadcrumb li {
+    padding-right: 1%;
+}
+
+.breadcrumb {
+    margin-left: 10vh;
+    width: 100%;
+}
+
+/*FOOTER*/
+footer {
+    margin-top: 5%;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 1vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#right {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 40%;
+    height: auto;
+}
+
+footer .row {
+    align-items: center;
+}
+
+footer h3 {
+    margin-bottom: 0;
+}
+
+footer,
+footer a {
+    color: black;
+}
+
+footer a {
+    align-items: center;
+    display: flex;
+}
+
+footer a img {
+    width: 15%;
+    padding-left: 1vh;
+}
+
+@media screen and (max-width: 1024px) {
+    .w33 {
+        width: 50%;
+    }
+
+    ul.uk-breadcrumb li {
+        padding-right: 2%;
+    }
+
+    .breadcrumb {
+        margin-left: 10vh;
+    }
+
+    #imgHome img {
+        width: 80%;
+    }
+
+    #title h1 {
+        font-size: 50px;
+    }
+
+    #title h2 {
+        font-size: 30px;
+    }
+
+    #spaces,
+    #editSpace,
+    #newSpace,
+    #title {
+        padding-bottom: 35%;
+    }
+
+    .members .w50 {
+        width: 100%;
+    }
+
+    #editSpace form {
+        width: 100%;
+    }
+
+    #editSpace form div article,
+    #editSpace form div div.members {
+        width: 100%;
+        padding: 2%;
+    }
+
+    #editSpace form div {
+        flex-wrap: wrap;
+    }
+
+    #editSpace .inner .infoSpace {
+        flex-direction: column;
+    }
+
+    #editSpace article .inner {
+        min-height: 200px;
+    }
+
+    #editSpace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #editSpace form {
+        justify-content: center;
+        width: 70%;
+    }
+
+    #editProfile form .w50 {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    #editProfile form input {
+        width: 100%;
+    }
+
+    #editProfile .row {
+        flex-direction: column;
+    }
+
+    #editProfile #deleteAccount {
+        width: 25%;
+    }
+
+    #editProfile form div {
+        width: 80%;
+    }
+
+
+    footer .w20,
+    footer .w40 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #login aside,
+    #register aside {
+        display: none;
+    }
+
+    .container #login article,
+    .container #register article {
+        width: 100%;
+    }
+
+    .w33 {
+        width: 100%;
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+    .hybrid {
+        width: 70%;
+    }
+
+    .breadcrumb {
+        margin-left: 0vh;
+    }
+
+    .navbar-collapse {
+        display: none;
+        right: 0;
+        width: 20%;
+        background-color: #99bcbc;
+        padding: 2%;
+        padding-top: 30vh;
+        position: absolute;
+        text-align: center;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .navbar-collapse li {
+        flex-direction: column;
+    }
+
+    .navbar-header {
+        display: block;
+        z-index: 2;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    #title {
+        text-align: center;
+    }
+
+    #imgHome {
+        display: none;
+    }
+
+    #spaces,
+    #newTask,
+    #title,
+    #newSpace,
+    #editSpace {
+        padding-bottom: 0;
+    }
+
+    #editSpace form {
+        width: 100%;
+    }
+
+    #newSpace,
+    #editSpace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #newSpace form,
+    #editSpace form {
+        justify-content: center;
+
+    }
+
+    #newSpace .photo-container,
+    #newSpace .wallpaper-container {
+        width: 100%;
+    }
+
+    #editProfile form div {
+        width: 100%;
+    }
+
+    footer {
+        position: inherit;
+    }
+
+    footer img {
+        width: 20%;
+    }
+
+    footer .w20,
+    footer .w40 {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer a {
+        justify-content: center;
+    }
+
+    footer h3 {
+        padding: 1vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    nav {
+        left: 0;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: auto;
+    }
+}
